@@ -1,6 +1,6 @@
 #!/usr/bin/python
 ''' tinywebapp.py
-    Jeff Ondich, 2012
+    Simon Orlovsky, Hami Abdi, Caleb Braun 2012
 
     This is the server-side script of a very simple web application
     that involves an HTML form with two <input type="text"> elements
