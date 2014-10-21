@@ -3,6 +3,7 @@
     
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -59,46 +60,32 @@
                 </div>
 			    <form action="webapp.py" method="get">
                     <div class="input-group">
-
-                      <span class="input-group-addon">@</span>
-                      <input type="text" name="lastname"class="form-control" placeholder="Last name">
+                      <form>
+                        <center> Last name: <input type="text" name="lastname"> </center>
+                        </form>
                     </div>
+
 
                     
                     <br>
-			        
 			        <!-- Ethnicity button -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Select your ethnicity <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Asian Descent</a></li>
-                        <li><a href="#">African Descent</a></li>
-                        <li><a href="#">European Descent</a></li>
-                        <li><a href="#">Hispanic Descent</a></li>
-                        <li><a href="#">Other</a></li>
-                      </ul>
-                    </div>
-                    <br>
-                    <br>
+                    <h1>Select Question</h1> <br>
 
-                    <!-- Question button -->
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Select question <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Q1</a></li>
-                        <li><a href="#">Q2</a></li>
-                        <li><a href="#">Q3</a></li>
-                        <li><a href="#">Q4</a></li>
-                        <li><a href="#">Q5</a></li>
-                      </ul>
-                    </div>
-					<br>
-                    <br>
-					<p><input type="submit" class="btn btn-primary" value="Go" /></p>
+                        <input type="radio" name="question" value="male"> q1<br>
+                        <input type="radio" name="question" value="female"> q2
+                        <br>
+                        <br>
+
+                    <h1>Select Ethnicity</h1> <br>
+
+                        <form action="">
+                        <input type="radio" name="ethnicity" value="african"> African Descent<br>
+                        <input type="radio" name="ethnicity" value="asian"> Asian Descent<br>
+                        <input type="radio" name="ethnicity" value="european"> European Descent<br>
+                        <input type="radio" name="ethnicity" value="other"> Other Descent
+    					<br>
+                        <br>
+    					<p><input type="submit" class="btn btn-primary" value="Go" /></p>
 			    </form>
 			</div>
 		</div>
@@ -106,7 +93,7 @@
         <p><a href="datasource.txt">data source code</a></p>
 
 	</div>
-
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
